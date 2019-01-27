@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    background-color: #f6f6f6;
+}
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index:-99;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+}
+.content p {
+    display: inline-block;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 20pt;
+}
+#team p {
+    text-align: center;
+}
+header {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+
+    background-color: #252525f0;
+    border-bottom: 2px black solid;
+}
+header h1{
+    padding: 20px 0 20px 50px;
+    display: block;
+    color: #FFF;
+    margin: 0;
+    text-shadow: 2px 2px black;
+}
+
+
+#imageGallery{
+    margin-top: 100vh;
+    padding-top: 20px;
+}
+
+.row > .column {
+    margin: 0 8px 8px 8px;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+}
+
+.row {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.centerShit {
+    margin: 0 auto;
+    max-width: 300px;
+}
+#socLogo {
+    max-width: 300px;
+    height: auto;
+}
+/* Create four equal columns that floats next to eachother */
+
+.column {
+    width: 25%;
+}
+#imageGallery .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#personContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.person {
+    padding: 20px 20px;
+    width: 300px;
+    text-align: center;
+}
+.person h3{
+    margin-bottom: 5px;
+}
+a {
+    color: #3366BB;
+}
+
+#button {
+    border-radius: 20px;
+    background-color: #ec930d;
+    color: #FFF;
+    float: right;
+    width: 200px;
+    margin: 20px;
+}
+#button a {
+    color: #FFF;
+    text-align: center;
+    vertical-align: center;
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+
+}
