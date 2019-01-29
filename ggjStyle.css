@@ -235,3 +235,10 @@ footer img {
 	border-top: 10px solid #41B6E6;
 }
 
+ul.projects {
+	padding-inline-start: 60px;
+}
+
+li.project {
+	text-align: left;
+}
