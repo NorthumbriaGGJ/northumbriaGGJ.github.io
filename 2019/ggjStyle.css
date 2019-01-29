@@ -186,6 +186,10 @@ section {
 	text-align: center;
 }
 
+section img {
+	max-width: 100%;
+}
+
 table {
 	margin: 0px 25px 25px 25px;
 	text-align: left;
@@ -235,3 +239,10 @@ footer img {
 	border-top: 10px solid #41B6E6;
 }
 
+ul.projects {
+	padding-inline-start: 60px;
+}
+
+li.project {
+	text-align: left;
+}
