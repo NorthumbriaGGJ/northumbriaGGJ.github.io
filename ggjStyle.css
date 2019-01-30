@@ -186,6 +186,10 @@ section {
 	text-align: center;
 }
 
+section img {
+	max-width: 100%;
+}
+
 table {
 	margin: 0px 25px 25px 25px;
 	text-align: left;
