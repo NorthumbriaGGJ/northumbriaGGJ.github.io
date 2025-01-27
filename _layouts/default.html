@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ site.title }}{% if page.title %}: {{ page.title }}{% endif %}</title>
+		<link rel="stylesheet" type="text/css" href="{{ '/css/style.css' | relative_url }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/png" href="{{ 'favicon.ico' | relative_url }}">
+
+		<meta name="Description" content="{{ site.description }}">
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Global Game Jam at Northumbria University">
+		<meta name="twitter:description" content="{{ site.description }}">
+		<meta name="twitter:image" content="{{ '/img/ggj18_1000x500px.jpg' | relative_url }}">
+		<meta name="twitter:image:alt" content="Global Game Jam logo">
+		<!-- /Twtiter Card -->
+
+		<!-- Facebook Card -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Global Game Jam at Northumbria University" />
+		<meta property="og:description" content="{{ site.description }}" />
+		<meta property="og:image" content="{{ '/img/ggj18_1000x500px.jpg' | relative_url }}" />
+		<meta property="og:image:width" content="1000" />
+		<meta property="og:image:height" content="500" />
+		<!-- /Facebook Card -->
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="https://globalgamejam.org/"><img src="{{ '/img/GGJ00-RoundLogo-900x900.png' | relative_url }}" alt="logo"></a>
+				<div id = headings>
+					<h1>Global Game Jam</h1>
+					<h2>Northumbria University</h2>
+				</div>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li class="{% if page.url == '/' %}selected{% endif %}"><a href="/">Home</a></li>
+				{% for jam in site.jams %}
+					<li class="{% if page.url == jam.url %}selected{% endif %}"><a href="{{ jam.url | relative_url }}">{{ jam.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</nav>
+
+		<main>
+			{{ content }}
+		</main>
+
+		<footer>
+			<div class="purpleline"></div>
+			<div class="content">
+				<span>This site uses images, text and logos from <a href="https://globalgamejam.org/">Global Game Jam</a>. Global Game Jam&reg; is a registered trademark.</span>
+				<img src="{{ '/img/NU_logo_black.png' | relative_url }}" alt="Northumbria University logo">
+			</div>
+		</footer>
+	</body>
+</html>
