@@ -34,3 +34,6 @@ defaults:
     values:
       layout: default
       permalink: /:name/
+
+sass:
+  style: compressed
